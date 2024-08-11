@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove.bg Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="remove-bg-logo-vector.png" alt="remove.bg logo">
+        </div>
+        <nav>
+            <a href="#">Remove Background</a>
+            <a href="#">How to use ▾</a>
+            <a href="#">Tools & API</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="auth">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="signup">Sign up</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-content">
+            <div class="image-area">
+                <canvas id="canvas" width="500" height="400"></canvas>
+            </div>
+            <h1>Remove Image<br>Background</h1>
+            <p>100% Automatically and <span class="free">Free</span></p>
+        </div>
+        <div class="right-content">
+            <div class="upload-area">
+                <button class="upload-btn" id="upload-button">Upload Image</button>
+                <input type="file" id="imageInput" style="display: none;">
+                <p>or drop a file,<br>paste image or URL</p>
+            </div>
+            <div class="yellow-wave"></div>
+            <div class="edit-options">
+                <button id="draw" class="edit-btn">Toggle Draw</button>
+                <button id="process-button" class="edit-btn">Process Image</button>
+                <button id="edit-button" class="edit-btn" style="display: none;">Edit Image</button>
+                <a id="download-btn" class="edit-btn" style="display: none;">Download Image</a>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
